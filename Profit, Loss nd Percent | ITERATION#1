@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main ()
+{
+  float cp, sp;
+  
+  printf ("cp is \n");
+  scanf ("%f", &cp);
+  printf ("sp is \n");
+  scanf ("%f", &sp);
+  
+  if (cp > sp)
+    {
+      printf ("loss = %0.2f\n", cp - sp);
+      printf ("loss percent = %0.2f\n", (cp - sp) * 100 / cp);
+    }
+  else
+    {
+      printf ("profit = %0.2f\n", sp - cp);
+      printf ("profit percent = %0.2f\n", (sp - cp) * 100 / cp);
+    }
+  
+  return 0;
+}
